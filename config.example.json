@@ -1,0 +1,42 @@
+{
+  "monitors": {
+    "left": {
+      "serial": "ABC1234",
+      "uid": "5&1c94b30a&0&UID4355",
+      "name": "My Left Monitor"
+    },
+    "center": {
+      "serial": "DEF5678",
+      "uid": "5&1c94b30a&0&UID4352",
+      "name": "My Center Monitor"
+    },
+    "right": {
+      "serial": "GHI9012",
+      "uid": "5&1c94b30a&0&UID4353",
+      "name": "My Right Monitor"
+    }
+  },
+  "modes": {
+    "gaming": {
+      "displays": [
+        { "monitor": "left",   "enabled": true,  "primary": false, "width": 2560, "height": 1440, "refreshRate": 75, "position": { "x": -2560, "y": 0 } },
+        { "monitor": "center", "enabled": true,  "primary": true,  "width": 1920, "height": 1080, "refreshRate": 240, "position": { "x": 0, "y": 0 } },
+        { "monitor": "right",  "enabled": true,  "primary": false, "width": 2560, "height": 1440, "refreshRate": 75, "position": { "x": 1920, "y": 0 } }
+      ]
+    },
+    "work": {
+      "displays": [
+        { "monitor": "left",   "enabled": false },
+        { "monitor": "center", "enabled": true,  "primary": true,  "width": 1920, "height": 1080, "refreshRate": 240, "position": { "x": 0, "y": 0 } },
+        { "monitor": "right",  "enabled": true,  "primary": false, "width": 2560, "height": 1440, "refreshRate": 75, "position": { "x": 1920, "y": 0 } }
+      ]
+    },
+    "focus": {
+      "displays": [
+        { "monitor": "left",   "enabled": false },
+        { "monitor": "center", "enabled": false },
+        { "monitor": "right",  "enabled": true,  "primary": true,  "width": 2560, "height": 1440, "refreshRate": 75, "position": { "x": 0, "y": 0 } }
+      ]
+    }
+  }
+}
